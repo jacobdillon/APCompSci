@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Project46 {
 	public static void main(String [] args) {
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in); // Make a new scanner named "scanner"
 		int initialOrganisms, rateOfGrowth, hoursItTakes, totalHours, totalPoplulation;
 
+		// Read the inputs from the keyboard
 		System.out.print("Input the initial number of organisms (int): ");
 		initialOrganisms = scanner.nextInt();
 
@@ -17,12 +18,12 @@ public class Project46 {
 		System.out.print("Input the total number of hours the organisms will grow for (int): ");
 		totalHours = scanner.nextInt();
 
-		int totalPopulation = initialOrganisms;
-		for(int counter = 0; counter < totalHours; counter++) {
-			if(counter % hoursItTakes == 0) {
-				totalPopulation *= rateOfGrowth;
+		int totalPopulation = initialOrganisms; // Set the current total to the initial
+		for(int i = 0; i < totalHours; i++) {
+			if(i % hoursItTakes == 0) { // If the current hour / the hours it takes has a remainder of 0
+				totalPopulation *= rateOfGrowth; // The total population is the current total population * the rate of growth
 			}
 		}
-		System.out.println("The final population of the organisms is: " + totalPopulation);
+		System.out.println("The final population of the organisms is: " + totalPopulation); // Print result
 	} // End of main
 } // End of class
