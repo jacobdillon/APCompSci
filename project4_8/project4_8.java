@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Project48 {
+public class project4_8 {
 	public static void main(String [] args) {
 		Scanner scanner = new Scanner(System.in); // New scanner named "scanner"
 		int inputNumber, base;

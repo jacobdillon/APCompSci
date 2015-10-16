@@ -4,7 +4,7 @@ import javax.swing.JLabel;
 import java.awt.FlowLayout;
 import java.awt.Color;
 
-public class Project26 {
+public class project2_6 {
 	public static void main(String [] args) {
 		JFrame frame = new JFrame("Project 2.6 - French, Mauritius, and Bulgarian Flags"); // Create a new JFrame with appropriate description
 		frame.setLayout(new FlowLayout(0, 3, 3));

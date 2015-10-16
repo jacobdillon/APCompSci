@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Project23 {
+public class project2_3 {
 	public static void main(String [] args) {
 		Scanner scanner = new Scanner(System.in); // Creates a new scanner named "scanner"
 		System.out.print("Input the number of kilometers you want to convert to miles: ");

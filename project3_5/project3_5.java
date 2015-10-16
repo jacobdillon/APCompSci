@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Project35 {
+public class project3_5 {
 	public static void main(String [] args) {
 		double weeklyPay, hourlyWage; // Initialize variables
 		int overTimeHours, hoursWorked;

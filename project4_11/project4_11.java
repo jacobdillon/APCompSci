@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Project411 {
+public class project4_11 {
 	public static void main(String [] args) {
 		Scanner scanner = new Scanner(System.in); // Create a new scanner named "scanner"
 		int numberOfSquares;

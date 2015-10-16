@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Project41 {
+public class project4_1 {
 	public static void main(String [] args) {
 		int firstNumber, secondNumber, resultQuotient, resultRemainder; // Define variables
 		Scanner scanner = new Scanner(System.in); // Create a new scanner named "scanner"
