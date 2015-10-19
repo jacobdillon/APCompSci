@@ -5,7 +5,8 @@ public class project3_4 {
 		double weeklyPay, hourlyWage; // Initialize variables
 		int hoursWorked, overTimeHours;
 
-		Scanner scanner = new Scanner(System.in); // Create a new scanner named "scanner"
+		Scanner scanner = new Scanner(System.in); // Create a new scanner named "scanner" 
+							// I DO NOT LIKE YOUR NAMING. 
 		System.out.print("Input the amount of hours worked (int): "); // Ask the user for input
 		hoursWorked = scanner.nextInt(); // Store the input in the int "hoursWorked"
 
