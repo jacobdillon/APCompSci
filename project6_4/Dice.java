@@ -16,8 +16,7 @@ public class Dice
 	public Dice()
 	{
 		// Initialize a new dies' viewable side to a random number
-		side = 4;
-		//roll();
+		roll();
 	}
 
 	public Dice(int s)
