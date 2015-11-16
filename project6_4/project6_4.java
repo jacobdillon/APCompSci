@@ -14,7 +14,7 @@ public class project6_4
 		Dice die2 = new Dice();
 
 		// Wager/Roll counter
-		int wager, maxMoney;
+		long wager, maxMoney;
 		int maxMoneyRolls = 0;
 		int rollCounter = 0;
 
@@ -22,7 +22,7 @@ public class project6_4
 
 		// Wager
 		System.out.print("Enter wager in dollars (Int): ");
-		wager = scanner.nextInt();
+		wager = scanner.nextLong();
 
 		/* Calculations */
 
