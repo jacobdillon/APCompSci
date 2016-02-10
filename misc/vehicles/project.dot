@@ -1,0 +1,53 @@
+graph project {
+	V [label="Vehicle\n(Implements: Top Speed, Weight)"];
+
+	Automobiles [label="Automobiles\n(Implements: Wheels, Passengers)"];
+
+	Car [label="Car"];
+	CarSpecs [label="Top Speed: 257mph\nWeight: 4,000lbs\nWheels: 4\nPassengers: 4"];
+
+	Bus [label="Bus"];
+	BusSpecs [label="Top Speed: 80mph\nWeight: 38,000lbs\nWheels: 4\nPassengers: 40"];
+
+	Truck [label="Truck\n(Implements: Load)"];
+	TruckSpecs [label="Top Speed: 120mph\nWeight: 6,000lbs\nWheels:4\nPassengers: 4\nLoad: Dirt"];
+
+	Train [label="Train\n(Implements: Passengers)"];
+	TrainSpecs [label="Top Speed: 374mph\nWeight: 18,000,000lbs\nPassengers: 1,500"];
+
+	Boat [label="Boat\n(Implements: Length)"];
+	BoatSpecs [label="Top Speed: 160mph\nWeight: 3,000lbs\nLength: 20feet"];
+
+	Air [label="Air\n(Implements: Max Height)"];
+
+	Plane [label="Plane"];
+	PlaneSpecs [label="Top Speed: 575mph\nWeight: 524,000lbs\nMax Height: 45,000feet"];
+
+	Jet [label="Jet"];
+	JetSpecs [label="Top Speed: 2,193mph\nWeight: 65,477lbs\nMax Height: 85,135feet"];
+
+	Tank [label="Tank"];
+	TankSpecs [label="Top Speed: 60mph\nWeight: 134,000lbs"];
+
+	V -- Automobiles;
+	V -- Train;
+	V -- Boat;
+	V -- Air;
+	V -- Tank;
+
+	Automobiles -- Car;
+	Automobiles -- Bus;
+	Automobiles -- Truck;
+
+	Air -- Plane;
+	Air -- Jet;
+
+	Car -- CarSpecs;
+	Bus -- BusSpecs;
+	Truck -- TruckSpecs;
+	Train -- TrainSpecs;
+	Boat -- BoatSpecs;
+	Plane -- PlaneSpecs;
+	Jet -- JetSpecs;
+	Tank -- TankSpecs;
+}

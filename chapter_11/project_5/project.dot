@@ -1,0 +1,29 @@
+graph project {
+	Deposit [label="Deposit"];
+	Withdrawal [label="Withdrawal"];
+	Balance [label="Balance"];
+	InterestRate [label="Interest Rate"];
+	CreditLine [label="Credit Line"];
+
+	BankAccount [label="Bank Account\nInterface"];
+	BankAccountAbstract [label="Bank Account\nAbstract Class\nImplements Bank Account"];
+
+	Credit [label="Credit Account\nConcrete Class\nFinal\nExtends Bank Account"];
+	Savings [label="Savings Account\nConcrete Class\nFinal\nExtends Bank Account"];
+	Checking [label="Checking Account\nConcrete Class\nFinal\nExtends Bank Account"];
+
+	BankAccount -- Deposit;
+	BankAccount -- Withdrawal;
+	BankAccount -- Balance;
+
+	BankAccount -- BankAccountAbstract;
+
+	BankAccountAbstract -- Credit;
+	BankAccountAbstract -- Savings;
+	BankAccountAbstract -- Checking;
+
+	Credit -- InterestRate;
+	Savings -- InterestRate;
+
+	Credit -- CreditLine;
+}
